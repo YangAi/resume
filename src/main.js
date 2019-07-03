@@ -10,7 +10,6 @@ import '@plugins/inject'
 import '@plugins/components'
 import '@plugins/style'
 
-console.log(router)
 
 Vue.config.productionTip = false
 

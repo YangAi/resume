@@ -2,7 +2,7 @@
   <div class="auth h-100v flex flex-col justify-center img-container bg-t-gray">
     <!--<l-title small white class="fixed bottom-0 right-0 p-4">Yang Ai's Resume</l-title>-->
     <l-section class="-mt-8 mb-2 md:mb-0">
-      <l-title white>Hello! <br class="lg:hidden" />I'm {{ $profile().name }}.</l-title>
+      <l-title white>Hello! <br class="lg:hidden" />I'm {{ $profile().name || 'Yang Ai' }}.</l-title>
       <l-title small white class="lg:w-2/3">Please enter your passcode to get the specific resume I prepared for you.</l-title>
     </l-section>
     <l-section>

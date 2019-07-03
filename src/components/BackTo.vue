@@ -13,9 +13,6 @@
 import routers from '@/router/routers'
 export default {
   name: 'BackTo',
-  created () {
-    console.log()
-  },
   data () {
     return {
       buttons: routers[0].children

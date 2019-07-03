@@ -1,20 +1,21 @@
-import { isEmpty } from 'lodash'
+import { isEmpty, toLower } from 'lodash'
 
 const codeList = ['iu']
 
 export default {
-	async setProfile ({ commit, state }, payload) {
+	async setProfile ({ commit, state }, passcode) {
 		let profile = {}
-		if (payload && codeList.indexOf(payload) >= 0) {
-			const importData = () => import('@data/' + payload + '.js')
+		passcode = toLower(passcode)
+		if (passcode && codeList.indexOf(passcode) >= 0) {
+			const importData = () => import('@data/' + passcode + '.js')
 			profile = await importData()
 			profile = profile.default
 		}
 
 		commit('SET_PROFILE', profile)
 		if (!isEmpty(profile)) {
-			commit('SET_PASSCODE', payload)
-			localStorage.setItem('passcode', payload)
+			commit('SET_PASSCODE', passcode)
+			localStorage.setItem('passcode', passcode)
 			return true
 		} else {
 			commit('SET_PASSCODE', false)

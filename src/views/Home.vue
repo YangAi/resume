@@ -23,7 +23,7 @@
       <br class="md:hidden"/>
       <mu-button raised large
                  :to="{name: 'Resume'}"
-                 class="inline-block mr-4 mb-4 bg-transparent border-red-500 border-solid text-t-red">My Resume</mu-button>
+                 class="inline-block mr-4 mb-4 bg-transparent border-red-500 border-solid text-red-500">My Resume</mu-button>
     </l-section>
   </div>
 </template>

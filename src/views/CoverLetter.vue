@@ -18,7 +18,7 @@
     </l-section>
     <l-section no-padding class="more-actions py-4 pl-4 lg:pl-0 mt-2">
       <mu-button raised large class="bg-t-red" :to="{name: 'Resume'}">My Resume</mu-button>
-      <mu-button raised large class="bg-transparent border-red-500 border-solid text-t-red" :href="'mailto:' + $profile().from.email">Contact me</mu-button>
+      <mu-button raised large class="bg-transparent border-red-500 border-solid text-red-500" :href="'mailto:' + $profile().from.email">Contact me</mu-button>
     </l-section>
     <back-to />
   </div>
