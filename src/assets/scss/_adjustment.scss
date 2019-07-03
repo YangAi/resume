@@ -1,0 +1,52 @@
+.mu-appbar {
+    height: 72px;
+}
+
+.mu-bottom-nav {
+    height: calc(56px + (constant(safe-area-inset-bottom)));
+    height: calc(56px + (env(safe-area-inset-bottom)));
+
+}
+.mu-bottom-nav-shift {
+    background-color: #fff!important;
+    .mu-bottom-item-icon{
+        color: theme('colors.gray.500')!important;
+    }
+}
+.mu-bottom-nav-shift .mu-bottom-item-active .mu-bottom-item-icon,
+.mu-bottom-nav-shift .mu-bottom-item-active .mu-bottom-item-text {
+    color: theme('colors.primary')!important;
+}
+.mu-linear-progress {
+    height: 2px;
+}
+
+
+$width: 1196px;
+.section>.section-wrapper, .mu-appbar{
+    max-width: $width;
+}
+
+@media (max-width: 1279px) {
+    $width: 998px;
+    .section>.section-wrapper, .mu-appbar{
+        max-width: $width;
+    }
+}
+@media (max-width: 1023px) {
+    $width: 740px;
+    .section>.section-wrapper, .mu-appbar{
+        max-width: $width;
+    }}
+@media (max-width: 767px) {
+    $width: 600px;
+    .section>.section-wrapper, .mu-appbar{
+        max-width: $width;
+    }
+}
+@media (max-width: 639px) {
+    $width: 520px;
+    .section>.section-wrapper, .mu-appbar{
+        max-width: $width;
+    }
+}

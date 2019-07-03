@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  outline: none;
+  font-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-font-smoothing: antialiased;
+  -webkit-transform: translate3d(1,1,1);
+  transform:translate3d(1,1,1);
+  text-rendering: auto;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+*:focus {outline: none;}
+*,*:after,*:before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  font-size: 16px;
+  height: 100%;
+  min-height: 100%;
+}
+#app {
+  min-width: 100%;
+  min-height: 100%;
+  transition: all 500ms ease;
+  @apply bg-gray-200;
+}
+html {
+  //max-width: 480px;
+  margin: auto;
+  position: relative;
+  //@apply bg-black;
+}
+body {
+  word-spacing: 1px;
+  font-weight: 400;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  line-height: 1.5;
+  position: relative;
+}
+body::-webkit-scrollbar, .row::-webkit-scrollbar, .col::-webkit-scrollbar{
+  width: 0;
+}
+main {
+  min-height: 100vh;
+}
+img{
+  max-width: 100%;
+  /*width: 100%; height: auto;max-width: 100%; display: block;*/
+}
+.img-container{
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color:#464646;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.breadcrumbs{
+  @apply text-xs;
+  a {
+    @apply text-primary;
+  }
+}
+.rebates-status {
+  &.tracked, &.confirmed, &.finished, &.cancelled {
+    @apply inline-block rounded-lg px-4 py-1;
+  }
+  &.tracked {
+    @apply bg-blue-200 text-blue-700;
+  }
+  &.confirmed {
+    @apply bg-yellow-200 text-yellow-700;
+  }
+  &.finished {
+    @apply bg-green-200 text-green-700;
+  }
+  &.cancelled {
+    @apply bg-gray-200 text-gray-700;
+  }
+}

@@ -1,0 +1,48 @@
+// -----------------------------------------------------------------------------
+// Typographic Element Definitions
+// -----------------------------------------------------------------------------
+//article {
+//  p{
+//    margin-bottom: 2 * $gutter;
+//    &:last-child {
+//      margin-bottom: 0;
+//    }
+//  }
+//}
+//h1, h2, h3, h4, h5, h6 {
+//  color: $title
+//}
+//p>a, .link, .fanli .notice li a {
+//  //color: $linkblue;
+//  cursor: pointer;
+//  padding-bottom: 2px;
+//  text-decoration: none;
+//  &:hover {
+//    border-bottom: 1px solid;
+//  }
+//}
+//em {
+//  font-style: normal
+//}
+//article p, article li{
+//  margin-bottom: 1em;
+//  line-height: 1.8;
+//}
+
+.big-title {
+  font-size: 36px;
+  font-weight: 700;
+  //text-transform: uppercase;
+}
+.small-title {
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  //text-transform: uppercase;
+}
+.caption-text, .ql-size-small{
+  font-size: 13px;
+}
+.disclaimer-text, .detailed-text{
+  @apply text-xs tracking-wide text-gray-500;
+}
